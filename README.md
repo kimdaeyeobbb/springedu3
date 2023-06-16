@@ -1,2 +1,2 @@
 # springedu3
-CI/CD 테스트를 위한 저장소
+CI/CD 테스트용 저장소
