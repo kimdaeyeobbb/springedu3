@@ -18,4 +18,20 @@ public class FriendDaoService {
     public List<Friend> friendList(){
         return repo.findAll();
     }
+    public boolean testDataSave() {
+        try {
+            Friend entity = new Friend();
+            entity.setName("둘리");
+            repo.save(entity);
+            entity = new Friend();
+            entity.setName("또치");
+            repo.save(entity);
+            entity = new Friend();
+            entity.setName("도우너");
+            repo.save(entity);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
